@@ -1,0 +1,11 @@
+version: 2
+
+sources:
+  - name: src_demo
+    database: DEMO
+    schema: DEMO_SCHEMA
+    tables:
+      - name: src_weather
+        identifier: WEATHER
+      - name: src_bike
+        identifier: BIKE
