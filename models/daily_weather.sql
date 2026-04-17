@@ -8,7 +8,7 @@ WITH daily_weather as (
       from  {{ source('src_demo', 'src_weather') }}
 ),
 daily_weather_agg as (
-    select created_at,
+    select created_at as date_weather,
            weather,
            round( avg(clouds) , 2) avg_clouds,
            round( avg(humidity) , 2) avg_humidity,
